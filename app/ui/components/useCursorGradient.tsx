@@ -14,3 +14,4 @@ const useCursorGradient = () => {
   
   return mousePosition;
 };
+export default useCursorGradient;
