@@ -20,13 +20,13 @@ const Mainpage: React.FC = () => {
 
         <Introduction />
       </div>
-      <div className="absolute z-20">
+      {/* <div className="absolute z-20">
         <img
           src="/assets/introductionBg.gig"
           alt="Foreground animation"
           className="w-48 h-48"
         />
-      </div>
+      </div> */}
         </div>
         
       {/* <div className="">
