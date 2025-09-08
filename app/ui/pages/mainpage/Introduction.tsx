@@ -4,7 +4,7 @@ const Introduction: React.FC = () => {
     <>
       <div className="flex flex-col justify-center items-center gap-2 h-screen ">
         <h1 className="text-gray-600 text-7xl font-extrabold font-mono tracking-tighter">
-          Hi there, I'm Kajol Murmu
+          Hi there, I&apos;m Kajol Murmu
         </h1>
         <div  className="flex flex-row text-gray-600 text-5xl font-extrabold font-mono tracking-tighter">
           <TextType
