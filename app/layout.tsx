@@ -30,6 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/logo.png" />
+        <title>Kajol Murmu</title>
+      </head>
       <body
         className={`${inter.className}  antialiased`}
       >
