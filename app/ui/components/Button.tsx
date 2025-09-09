@@ -19,9 +19,13 @@ const Button: React.FC<ButtonProps> = ({
         return "bg-[#F4F8D3] text-[#8E7DBE] pt-[2px] pb-[2px] pl-5 pr-5 text-sm rounded-3xl border-2 border-[#8E7DBE]";
       case "skills-dark":
         return "bg-white border font-bold font-semibold border-black pt-2 pb-2 pl-5 pr-5 ";
-      case "size-active":
-        return "bg-black text-white font-bold pt-2 pb-2 pl-5 pr-5 ";
-
+      case "header-light":
+        return "bg-[#F4F8D3] text-[#8E7DBE] text-xl pt-[2px] pb-[2px] pl-5 pr-5 rounded-2xl border-2 border-[#8E7DBE]";
+case "skills-light-2":
+        return "bg-[#F4F8D3] text-[#8E7DBE] sm:py-[3px] py-[2px] px-6 px-5 text-sm sm:text-xl rounded-3xl border-2 border-[#8E7DBE]";
+      case "skills-dark-2":
+        return "bg-white border font-bold font-semibold border-black pt-2 pb-2 pl-5 pr-5 ";
+      
       default:
         return "";
     }
