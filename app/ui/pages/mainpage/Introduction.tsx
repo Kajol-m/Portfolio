@@ -26,7 +26,7 @@ const Introduction: React.FC = () => {
         <div>
           <Button variant="header-light" onClick={()=>{
                     const link=document.createElement('a');
-                    link.href='/assets/Kajol_Murmu.pdf';
+                    link.href='/assets/Kajol-Murmu.pdf';
                     link.download="Kajol_Murmu.pdf"
                     document.body.append(link);
                     link.click();
