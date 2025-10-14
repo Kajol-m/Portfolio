@@ -8,21 +8,19 @@ export default function Project() {
       </h1>
       <div className="flex flex-col gap-8">
         <ProjectCard
-          projectName="Underwater Image Enhancement Using Lightweight CNN"
-          projectLink="https://colab.research.google.com/drive/1HbNXS3fdlQ6H0_jpubssTBIAmAff_eEM"
-          projectImage="/assets/underWater.jpg"
-          projectType="Final Year Project"
-          projectDescription=" Developed a novel lightweight CNN architecture with only five convolutional layers to enhance underwater
- images, improving visibility with minimal computational cost. Implemented the solution in Python using TensorFlow and Keras, optimized for real-time performance on edge
- devices. Utilized Adam optimizer, scikit-learn, NumPy, and Matplotlib for training, evaluation, and visualization. Documented outcomes with quantifiable metrics (UCIQE, NIQE) and benchmarked performance against
- state-of-the-art approaches."
+          projectName="Pixelated: An E-Commerce Website"
+          projectLink="https://pixelated-kajol.netlify.app/"
+          projectImage="/assets/pixelated.png"
+          projectType="E-commerece website"
+          projectDescription="Developed a modern e-commerce web application featuring dynamic product listings, wishlist management, cart functionality and secure authentication. Built using React (TypeScript, Tailwind CSS) for the frontend and Node.js (Express) with MySQL for the backend. Implemented robust RESTful APIs, database normalization, and unique ID generation logic for products and orders. Deployed the application on Render with efficient database management and user session handling. Focused on scalable architecture, clean UI design, and smooth user experience."
           skills={[
-            "Python",
-            "Tensorflow/Keras",
-            "Google Colab",
-            "Scikit image",
-            "Matplotlib",
-            "Numpy",
+            "Typescript",
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "Tailwind CSS",
+            "MySQL",
+            "ShadCN",
           ]}
         />
         <ProjectCard
@@ -39,10 +37,10 @@ export default function Project() {
             "Gemini API",
             "Assembly API",
             "MongoDB",
-            "AWS"
+            "AWS",
           ]}
-          />
-          <ProjectCard
+        />
+        <ProjectCard
           projectName="Portfolio Website"
           projectLink="https://portfolio-kajol.vercel.app/"
           projectImage="/assets/SoftwareDeveloper.png"
@@ -53,7 +51,26 @@ export default function Project() {
             "Next.js",
             "Tailwind CSS",
             "MongoDB",
-            "React Bits"
+            "React Bits",
+          ]}
+        />
+
+        <ProjectCard
+          projectName="Underwater Image Enhancement Using Lightweight CNN"
+          projectLink="https://colab.research.google.com/drive/1HbNXS3fdlQ6H0_jpubssTBIAmAff_eEM"
+          projectImage="/assets/underWater.jpg"
+          projectType="Final Year Project"
+          projectDescription=" Developed a novel lightweight CNN architecture with only five convolutional layers to enhance underwater
+ images, improving visibility with minimal computational cost. Implemented the solution in Python using TensorFlow and Keras, optimized for real-time performance on edge
+ devices. Utilized Adam optimizer, scikit-learn, NumPy, and Matplotlib for training, evaluation, and visualization. Documented outcomes with quantifiable metrics (UCIQE, NIQE) and benchmarked performance against
+ state-of-the-art approaches."
+          skills={[
+            "Python",
+            "Tensorflow/Keras",
+            "Google Colab",
+            "Scikit image",
+            "Matplotlib",
+            "Numpy",
           ]}
         />
       </div>
