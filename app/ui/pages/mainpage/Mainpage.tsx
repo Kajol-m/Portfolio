@@ -1,7 +1,7 @@
 "use client";
 
 import { CursorGradient } from "../../components/CursorGradient";
-import Header from "../../components/Header";
+import Header from "./Header"
 import Contact from "./Contact";
 import Experience from "./Experience";
 import Introduction from "./Introduction";
@@ -18,20 +18,20 @@ const Mainpage: React.FC = () => {
       gradientOpacity={0.3}
       gradientColor="29, 78, 216"
     >
-      <div className="hidden">
+      <div>
         <Header/>
       </div>
-      <div className="">
+      <div>
         <Introduction />
       </div>
-      <div>
+      <div id="experience">
         <Experience />
       </div>
-      <div>
+      <div id="projects">
         <Project />
       </div>
-      <div><Skills skills={skills}/></div>
-      <div>
+      <div id="skills"><Skills skills={skills}/></div>
+      <div id="contact">
         <Contact/>
       </div>
     </CursorGradient>

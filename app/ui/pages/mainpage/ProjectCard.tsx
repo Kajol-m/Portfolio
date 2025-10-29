@@ -7,6 +7,7 @@ interface ProjectCardProps {
   projectImage:string;
   projectType?: string;
   projectDescription: string;
+  mobileProjectDescription:string;
   skills: string[];
 }
 export default function ProjectCard({
@@ -15,12 +16,13 @@ export default function ProjectCard({
   projectImage,
   projectType,
   projectDescription,
+  mobileProjectDescription,
   skills,
 }: ProjectCardProps) {
   return (
-    <div className="sm:p-8 p-4 sm:m-8 flex md:flex-row flex-col gap-5 border border-[#8E7DBE] sm:border-transparent bg-yellow-100/25 sm:bg-transparent hover:sm:bg-yellow-100/25 hover:sm:border-[#8E7DBE] rounded-xl text-gray-600 group">
+    <div className="lg:p-8 md:p-8 p-4 lg:m-8 m-2 flex md:flex-row flex-col gap-5 border-1 lg:border-2 border-gray-600 lg:border-transparent hover:lg:border-gray-600 lg:rounded-xl text-gray-600 group">
       <div className="md:w-1/6">
-        <img src={projectImage} alt={projectName} className=" mt-3 rounded-xl border-2 border-gray-500"/>
+        <img src={projectImage} alt={projectName} className=" mt-2 border-2 border-gray-500"/>
       </div>
       <div className="md:w-5/6">
       <div className="pb-3">
@@ -34,7 +36,8 @@ export default function ProjectCard({
         
         <p className="text-sm">{projectType}</p>
       </div>
-      <p className="pb-5 hidden sm:block">{projectDescription}</p>
+      <p className="pb-5 hidden md:block text-justify">{projectDescription}</p>
+      <p className="pb-5 text-justify block md:hidden">{mobileProjectDescription}</p>
       <div className="hidden md:block">
         {skills.map((skill, index) => (
           <Button variant="skills-light" key={index} onClick={() => {}}  className="mr-3 mt-2">

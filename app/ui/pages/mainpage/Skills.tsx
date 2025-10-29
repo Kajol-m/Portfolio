@@ -6,16 +6,19 @@ interface SkillsProp {
 }
 export default function Skills({ skills }: SkillsProp) {
   return (
-    <div className="m-8">
-      <div className="sm:m-8 mb-4  text-gray-600 sm:text-5xl text-3xl font-extrabold font-mono tracking-tighter">
+    <div className="lg:m-4 m-4">
+      <div className="sm:m-8 m-3 text-gray-600 sm:text-5xl text-3xl font-extrabold font-mono tracking-tighter">
         <h1>Skills</h1>
       </div>
       <div
-        className="m-2 sm:m-8 
-  border border-[#8E7DBE] sm:border-transparent 
-  bg-yellow-100/25 sm:bg-transparent 
-  hover:sm:border-[#8E7DBE] hover:sm:bg-yellow-100/25 
-  sm:p-8 p-3 rounded-xl"
+        className="
+    lg:m-8
+    border-1 lg:border-2 border-gray-600
+    lg:border-transparent
+    lg:hover:border-gray-600
+    sm:p-8 p-4
+    lg:rounded-xl
+  "
       >
         {skills.map((skill, index) => (
           <Button

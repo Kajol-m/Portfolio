@@ -7,12 +7,13 @@ interface ExrienceCardsProps{
     companyDate:string;
     location:string;
     experienceDescription:string;
+    mobileDescription:string;
     skills:string[];
 
 }
-export default function ExperienceCards({company,companyLink,companyDate,location,experienceDescription,skills}:ExrienceCardsProps) {
+export default function ExperienceCards({company,companyLink,companyDate,location,experienceDescription,mobileDescription,skills}:ExrienceCardsProps) {
   return (
-    <div className="md:flex sm:p-8 p-4 sm:m-8 m-4 border border-[#8E7DBE] sm:border-transparent bg-yellow-100/25 sm:bg-transparent hover:sm:bg-yellow-100/25 hover:sm:border-[#8E7DBE] rounded-xl text-gray-600  group">
+    <div className="md:flex lg:p-8 lg:m-8 p-4 m-4 border-1 lg:border-2 border-gray-600 lg:border-transparent hover:lg:border-gray-600 lg:rounded-xl text-gray-600  group">
       <div className="md:w-1/6 pt-1">
         <p className="text-sm">{companyDate}</p>
       </div>
@@ -25,9 +26,10 @@ export default function ExperienceCards({company,companyLink,companyDate,locatio
         
         <p className="text-sm location">{location}</p>
       </div>
-      <p className="pb-5 hidden sm:block">
+      <p className="pb-5 hidden md:block text-justify">
         {experienceDescription}
       </p>
+      <p className="pb-5 block md:hidden text-justify">{mobileDescription}</p>
       <div className=" hidden sm:block">
         {skills.map((skill,index)=>(
             <Button variant="skills-light" key={index} onClick={()=>{}} className="mr-3 mt-2">{skill}</Button>

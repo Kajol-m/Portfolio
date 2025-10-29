@@ -2,17 +2,18 @@ import ProjectCard from "./ProjectCard";
 
 export default function Project() {
   return (
-    <div className="m-8">
+    <div className="lg:m-4 m-2">
       <h1 className="sm:m-8 m-3 text-gray-600 sm:text-5xl text-3xl font-extrabold font-mono tracking-tighter">
         Projects
       </h1>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col md:gap-8 gap-4">
         <ProjectCard
           projectName="Pixelated: An E-Commerce Website"
           projectLink="https://pixelated-kajol.netlify.app/"
           projectImage="/assets/pixelated.png"
           projectType="E-commerece website"
           projectDescription="Developed a modern e-commerce web application featuring dynamic product listings, wishlist management, cart functionality and secure authentication. Built using React (TypeScript, Tailwind CSS) for the frontend and Node.js (Express) with MySQL for the backend. Implemented robust RESTful APIs, database normalization, and unique ID generation logic for products and orders. Deployed the application on Render with efficient database management and user session handling. Focused on scalable architecture, clean UI design, and smooth user experience."
+          mobileProjectDescription="Developed a modern e-commerce web application featuring dynamic product listings, wishlist management, cart functionality and secure authentication."
           skills={[
             "Typescript",
             "React.js",
@@ -29,6 +30,7 @@ export default function Project() {
           projectImage="/assets/podcastSummarizer.png"
           projectType="Web application to summarize podcast"
           projectDescription="Developed a full-stack web application to extract, transcribe, and summarize podcast episodes. Utilized AssemblyAI API for transcription and Google Gemini API for generating AI-powered summaries. Built a responsive frontend using React and TypeScript, and a scalable backend using Node.js, Express, and MongoDB. Deployed frontend to AWS S3 and AWS Cloudfront and backend to Render.com for cloud hosting."
+          mobileProjectDescription="Developed a full-stack web application to extract, transcribe, and summarize podcast episodes. Utilized AssemblyAI API for transcription and Google Gemini API for generating AI-powered summaries."
           skills={[
             "Typescript",
             "React.js",
@@ -46,6 +48,7 @@ export default function Project() {
           projectImage="/assets/SoftwareDeveloper.png"
           projectType="My portfolio"
           projectDescription="Built a full-stack web application using Next.js (React framework) with server-side rendering (SSR) and API routes for efficient data handling. Designed and implemented a MongoDB database to store and manage static data, integrating it with the frontend via custom REST API endpoints. Utilized Tailwind CSS for responsive, scalable UI components, ensuring a seamless user experience across devices."
+          mobileProjectDescription="Built a full-stack web application using Next.js (React framework) with server-side rendering (SSR) and API routes for efficient data handling."
           skills={[
             "Typescript",
             "Next.js",
@@ -60,10 +63,8 @@ export default function Project() {
           projectLink="https://colab.research.google.com/drive/1HbNXS3fdlQ6H0_jpubssTBIAmAff_eEM"
           projectImage="/assets/underWater.jpg"
           projectType="Final Year Project"
-          projectDescription=" Developed a novel lightweight CNN architecture with only five convolutional layers to enhance underwater
- images, improving visibility with minimal computational cost. Implemented the solution in Python using TensorFlow and Keras, optimized for real-time performance on edge
- devices. Utilized Adam optimizer, scikit-learn, NumPy, and Matplotlib for training, evaluation, and visualization. Documented outcomes with quantifiable metrics (UCIQE, NIQE) and benchmarked performance against
- state-of-the-art approaches."
+          projectDescription=" Developed a novel lightweight CNN architecture with only five convolutional layers to enhance underwater images, improving visibility with minimal computational cost. Implemented the solution in Python using TensorFlow and Keras, optimized for real-time performance on edge devices. Utilized Adam optimizer, scikit-learn, NumPy, and Matplotlib for training, evaluation, and visualization. Documented outcomes with quantifiable metrics (UCIQE, NIQE) and benchmarked performance against state-of-the-art approaches."
+          mobileProjectDescription="Developed a novel lightweight CNN architecture with only five convolutional layers to enhance underwater images, improving visibility with minimal computational cost."
           skills={[
             "Python",
             "Tensorflow/Keras",
